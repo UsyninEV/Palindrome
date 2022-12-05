@@ -1,0 +1,19 @@
+using System;
+    class Palindrome
+{ 
+    public static void Main()
+    { Console.WriteLine("Введите слово: ");
+    string s = Console.ReadLine();
+        bool palindrome = true;
+        int n = s.Length;
+        for (int i = 0; i < n / 2; i++)
+        {
+            if (s[i] != s[n - 1 - i])
+                palindrome = false;
+        }
+        if (palindrome == true)
+            Console.WriteLine(" Это палиндром!");
+        else
+            Console.WriteLine("Это не палиндром!");
+    }    
+}
